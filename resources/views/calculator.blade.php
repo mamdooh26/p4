@@ -14,11 +14,11 @@
                 <li><label for='waysOfSplit'>Split how many ways? <span class="required">*</span></label></li>
                 <li><input type='text'
                            name='waysOfSplit'
-                           id='waysOfSplit' value=@if (isset($waysOfSplit)) {{$waysOfSplit}} @endif ></li>
+                           id='waysOfSplit' @if (isset($waysOfSplit)) value= {{ $waysOfSplit }} @endif></li>
                 <li><label for='tabCost'>How much was the tab? <span class="required">*</span></label></li>
                 <li><input type='text'
                            name='tabCost'
-                           id='tabCost' value= @if (isset($tabCost)) {{$tabCost}} @endif></li>
+                           id='tabCost' @if (isset($tabCost)) value= {{ $tabCost }} @endif></li>
                 <li><label for='serviceRating'>How was the service?</label></li>
                 <li><select name='serviceRating' id='serviceRating'>
                         <option value='-1'>Choose one...</option>
@@ -30,7 +30,7 @@
                 <li><label for='roundUp'>Round up?
                         <input type='checkbox'
                                name='roundUp'
-                               @if (isset($roundUp) && $roundUp == true) checked @endif > Yes</label></li>
+                               id='roundUp' @if (isset($roundUp) && $roundUp == true) checked @endif > Yes</label></li>
                 <li><input type='submit' value='Calculate' class=''></li>
 
             </ul>
