@@ -26,7 +26,7 @@ class CountriesTableSeeder extends Seeder
             $country->created_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
             $country->updated_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
             $country->country_name = $countryData[0];
-            
+
             $country->save();
             $count--;
         }
