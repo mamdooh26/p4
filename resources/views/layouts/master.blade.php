@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>@yield('title', 'Foobooks')</title>
+    <title>@yield('title', 'Country Visited')</title>
     <meta charset='utf-8'>
     <link href='/css/p3.css' type='text/css' rel='stylesheet'>
 
