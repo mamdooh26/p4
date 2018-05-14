@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Config;
 use Log;
 use App\UserInfo;
-use App\country;
+use App\Country;
 
 class UserInfoController extends Controller
 {
